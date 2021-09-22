@@ -471,8 +471,8 @@ command! Jumps call fzf#run(fzf#wrap({
         \ 'sink': function('GoToJump')}))
 
 "
-" set verbosefile=~/.log/vim/verbose.log
-" set verbose=15
+"set verbosefile=~/.log/vim/verbose.log
+"set verbose=15
 
 " https://stackoverflow.com/questions/62148994/strange-character-since-last-update-42m-in-vim
 let &t_TI = ""
@@ -481,3 +481,13 @@ let &t_TE = ""
 set cursorline
 "let g:EditorConfig_core_mode = 'external_command'
 "let g:EditorConfig_exec_path = '/usr/bin/editorconfig-0.12.1'
+"
+"Customer template functions
+
+function HeaderXml()
+    :0read /home/harmony/.vim/templates/xml_headers.txt
+endfunction
+
+function Headerpy()
+    :0read /home/harmony/.vim/templates/py_headers.txt
+endfunction

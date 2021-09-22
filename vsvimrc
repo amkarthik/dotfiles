@@ -1,0 +1,6 @@
+"make kj as Esc and disable Esc
+inoremap kj <Esc>
+inoremap <Esc> <NOP>
+
+"split line
+map K i<Enter>kj
